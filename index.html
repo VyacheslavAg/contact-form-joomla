@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/contact-form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="form-block">
+    <form action="contact_form_handler.php" method="post" id="form" class="form__body">
+
+        <div class="form-block-container">
+            <div class="form-block-left">
+                <div class="selection-of-an-object">
+                    <div class="title-selection-of-an-object">Выберите объект</div>
+                    <div class="object-group">
+                        <input type="radio" name="object" class="object" value="Линейные объекты" id="object-1">
+                        <label for="object-1" class="object-group-item">
+                            <span>Линейные объекты</span>
+                        </label>
+
+                        <input type="radio" name="object" class="object" value="Благоустройство" id="object-2">
+                        <label for="object-2" class="object-group-item">
+                            <span>Благоустройство</span>
+                        </label>
+
+                        <input type="radio" name="object" class="object" value="Производственное здание" id="object-3">
+                        <label for="object-3" class="object-group-item">
+                            <span>Производственное здание</span>
+                        </label>
+
+                        <input type="radio" name="object" class="object" value="Склад / Ангар" id="object-4">
+                        <label for="object-4" class="object-group-item">
+                            <span>Склад<br>Ангар</span>
+                        </label>
+
+                        <input type="radio" name="object" class="object" value="Жилой дом" id="object-5">
+                        <label for="object-5" class="object-group-item">
+                            <span>Жилой дом</span>
+                        </label>
+
+                        <input type="radio" name="object" class="object" value="Административное здание" id="object-6">
+                        <label for="object-6" class="object-group-item">
+                            <span>Административное здание</span>
+                        </label>
+
+                        <input type="radio" name="object" class="object" value="Коммерческие строения" id="object-7">
+                        <label for="object-7" class="object-group-item">
+                            <span>Коммерческие строения</span>
+                        </label>
+
+                        <input type="radio" name="object" class="object" value="Другое" id="object-8">
+                        <label for="object-8" class="object-group-item">
+                            <span>Другое</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-block-left-down">
+                    <div class="selection-of-area">
+                        <div class="title-selection-of-area">Площадь</div>
+                        <select name="area" id="area" class="select-block _req _select">
+                            <option disabled="disabled" selected>Выберите площадь проектируемого объекта</option>
+                            <option value="от 1000 до 1500 м²">от 1000 до 1500 м²</option>
+                            <option value="от 1500 до 5000 м²">от 1500 до 5000 м²</option>
+                            <option value="от 5000 до 25000 м²">от 5000 до 25000 м²</option>
+                            <option value="свыше 25000 м²">свыше 25000 м²</option>
+                        </select>
+                    </div>
+
+                    <div class="type-of-work">
+                        <div class="title-type-of-work">Вид работ</div>
+                        <div class="type-group">
+                            <div class="type-group-item">
+                                <input type="checkbox" name="type-1" id="cbx1">
+                                <label for="cbx1" class="toggle"><span></span></label>
+                                <p>Проектирование</p>
+                            </div>
+                            <div class="type-group-item">
+                                <input type="checkbox" name="type-2" id="cbx2">
+                                <label for="cbx2" class="toggle"><span></span></label>
+                                <p>Согласование</p>
+                            </div>
+                            <div class="type-group-item">
+                                <input type="checkbox" name="type-3" id="cbx3">
+                                <label for="cbx3" class="toggle"><span></span></label>
+                                <p>Другое</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-block-right">
+                <div class="contacts-block">
+                    <p class="title-contacts-block">Наш специалист подготовит расчёт полной стоимости объекта в
+                        течение 1 рабочего дня
+                    </p>
+                    <input type="email" name="email" class="contacts-input _req _email" placeholder="✉ Почта">
+                    <input type="tel" name="phone_number" class="contacts-input _req" placeholder="☎ Телефон (обязательное поле)">
+                    <input type="submit" name="form-btn" class="form-btn" value="Заказать расчет!">
+                    <a href="">Согласие на обработку персональных данных</a>
+                </div>
+
+                <div class="PDF-block">
+                    <div class="title-PDF-block">Получите Пошаговое руководство на строительство здания после отправки заявки</div>
+                    <img src="assets/img/PDF-file-2.png" alt="png-file">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
